@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title></title>
+
+	<style type="text/css">
+		body{
+			background color: blue;
+			color: #5e2d8c;
+			font-size: 20px;
+		}
+		input{
+			padding: 5px;
+			border: 2px solid #f3c2cb;
+			border-radius: 10px;
+		}
+		.form-elememnt{
+			margin: 20px;
+		}
+
+		.form-button{
+			background-color: #5e2d8c;
+			border: rgb(78, 79, 33);
+			color: #f3c2cb;
+			border-radius: 10px;
+			padding: 10px;
+			font-weight: bold;
+		}
+		.title{
+			margin: 10ox auto;
+			padding: 10px;
+			text-align: center;
+			background-color: white;
+			border-radius: 10px;
+			width: 50%;
+		}
+		.form-panel{
+			text-align: center;
+			margin: 10px;
+		}
+	</style>
+
+</head>
+<body>
+		<div class="title">
+			<h2>SMS Sending Software</h2>
+		</div>
+
+		<div class="form-panel">
+			<form action="/sms.php" method="post">
+				
+				<div class="form-elememnt">
+					<label>Sender's Phone Number</label>
+					<input type="number" name="sender" placeholder="type ssender phone number">
+				</div>
+
+
+				<div class="form-elememnt">
+					<label>Reciepient Phone Number</label>
+					<input type="number" name="to" placeholder="type reciepient phone number">
+				</div>
+
+				<div class="form-elememnt">
+					<textarea rows="5" cols="40" name="message" placeholder="Type your Message"></textarea>
+				</div>
+
+				<div>
+					<input class="form-buttonm" type="submit" value="send sms" name="">
+				</div>
+			</form>
+		</div>
+</body>
+</html>
